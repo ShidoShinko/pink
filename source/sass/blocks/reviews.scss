@@ -1,0 +1,18 @@
+.reviews {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+  font-style: normal;
+
+  .reviews__author {
+    color: $black;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .reviews__text {
+    color: $primary;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,24 @@
+.feedback {
+  color: $primary;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+
+  .feedback__header {
+    font-weight: 300;
+    line-height: 29px;
+  }
+
+  .feedback__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  .feedback__description {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33px;
+  }
+}

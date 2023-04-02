@@ -1,0 +1,31 @@
+.card {
+  color: $primary;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+
+  .card__post {
+    background-color: $background-second;
+  }
+
+  .card__author {
+    font-weight: 700;
+  }
+
+  .card__author-time {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .card__discription {
+    font-weight: 400;
+  }
+
+  .card__social {
+    color: $secondary;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

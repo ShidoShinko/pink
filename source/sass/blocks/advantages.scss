@@ -1,0 +1,35 @@
+.advantages {
+  min-width: 320px;
+  color: $primary;
+  text-align: center;
+
+  &__tagline {
+    // position: absolute;
+    width: 337px;
+    height: 100px;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 54px;
+    margin: 0;
+  }
+}
+
+.list-wrapper {
+  &__list {
+    background-color: $background-second;
+    padding: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-style: 18px;
+    line-height: 24px;
+  }
+
+  &__description {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

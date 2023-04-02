@@ -1,0 +1,35 @@
+.controls-range {
+  background-color: $secondary;
+  height: 41px;
+  margin-bottom: 9px;
+  padding-bottom: 0;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+
+  .scale {
+    height: 2px;
+    background-color: $black;
+  }
+
+  .bar {
+    width: 70%;
+    height: 2px;
+    background-color: $secondary;
+  }
+
+  .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 8px solid $application-download;
+    background-color: $primary;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 $secondary;
+    cursor: pointer;
+  }
+}

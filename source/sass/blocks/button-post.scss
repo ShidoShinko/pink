@@ -1,0 +1,24 @@
+.button-post {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 18px;
+  box-sizing: border-box;
+
+  .button-post__upload {
+    color: $secondary;
+    font-weight: 700;
+    border: 3px solid $secondary;
+    border-radius: 30px;
+  }
+
+  .button-post__cancel {
+    color: $background-second;
+    text-align: left;
+    font-weight: 700;
+    width: 280px;
+    height: 55px;
+    border: 3px solid $background-second;
+    border-radius: 30px;
+  }
+}
