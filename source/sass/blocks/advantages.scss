@@ -1,35 +1,77 @@
 .advantages {
   min-width: 320px;
-  color: $primary;
-  text-align: center;
+  background-color: $background-second;
+
+  &__slogan {
+    background-color: $background-first;
+  }
 
   &__tagline {
     // position: absolute;
-    width: 337px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
     font-weight: 300;
-    font-size: 35px;
+    font-size: 20px;
     line-height: 54px;
     margin: 0;
   }
 }
 
 .list-wrapper {
+  padding-top: 53px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   &__list {
-    background-color: $background-second;
-    padding: 0;
+    text-align: center;
+  }
+
+  &__item {
+    margin-bottom: 43px;
   }
 
   &__title {
+    margin-bottom: 23px;
     font-weight: 700;
     font-style: 18px;
     line-height: 24px;
   }
 
   &__description {
-    overflow-wrap: break-word;
+    margin: 0;
+    // overflow-wrap: break-word;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+.image-wrapper {
+  &__main {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__changed,
+  &__normal {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    &__changed,
+    &__normal {
+      display: block;
+    }
+  }
+}
+
+.analysis {
+  background-color: $background-first;
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
   }
 }

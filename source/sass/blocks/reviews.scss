@@ -16,3 +16,19 @@
     font-weight: 400;
   }
 }
+
+.reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &__author-info {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: column-reverse;
+    &__author-info {
+      display: block;
+    }
+  }
+}

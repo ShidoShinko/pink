@@ -117,29 +117,33 @@
         <div class="list-wrapper">
           <ul class="list-wrapper__list">
             <li class="list-wrapper__item">
-              <p class="list-wrapper__title">Поднимает настроение</p>
+              <h3 class="list-wrapper__title title-reset">
+                Поднимает настроение
+              </h3>
               <p class="list-wrapper__description">
                 Приложение позволит вам победить осеннюю хандру и депрессию
                 буквально в несколько кликов
               </p>
             </li>
             <li class="list-wrapper__item">
-              <p class="list-wrapper__title">Меняет мир вокруг</p>
+              <h3 class="list-wrapper__title title-reset">Меняет мир вокруг</h3>
               <p class="list-wrapper__description">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью,
                 чтобы усилить эффект
               </p>
             </li>
             <li class="list-wrapper__item">
-              <p class="list-wrapper__title">Заводит новых друзей</p>
+              <h3 class="list-wrapper__title title-reset">
+                Заводит новых друзей
+              </h3>
               <p class="list-wrapper__description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
                 заводите новых
               </p>
             </li>
           </ul>
-          <div class="image">
-            <picture>
+          <div class="image-wrapper">
+            <picture class="image-wrapper__main">
               <source
                 srcset="img/advantages-desktop-final.png"
                 media="(min-width: 1200px)"
@@ -155,7 +159,7 @@
                 alt="Пинк"
               />
             </picture>
-            <picture>
+            <picture class="image-wrapper__changed">
               <img
                 src="img/advantages-desktop-changed.png"
                 width="186"
@@ -163,7 +167,7 @@
                 alt="Пинк"
               />
             </picture>
-            <picture class="">
+            <picture class="image-wrapper__normal">
               <img
                 src="img/advantages-desktop-normal.png"
                 width="186"
@@ -186,7 +190,26 @@
 
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__wrapper">
+
+        <div class="reviews-wrapper">
+          <div class="reviews-wrapper__title">
+            <p class="reviews-wrapper__author">Николай Петров</p>
+            <p class="reviews-wrapper__author-info">25 лет, водитель трамвая</p>
+          </div>
+          <div class="reviews-wrapper__description">
+            <p>
+              "Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычные серые вещи! А еще я познакомился со своей
+              будущей женой в комментария к выложенной фотографии!"
+            </p>
+          </div>
+        </div>
+        <div class="reviews-wrapper__slaider">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+        </div>
+        <!-- <div class="reviews__wrapper">
           <ul class="reviews__list slide-list">
             <li class="slide-list__item review">
               <div class="review__wrapper">
@@ -233,21 +256,13 @@
           <!--
             !!Слайдеры будут меняться через класс слайдер-эктив
           -->
-        </div>
+        <!-- </div> -->
+        -->
       </section>
 
       <section class="subscribe">
-        <!--
-  !!Для мобильной версии слайдер будет объединенным с 1 столбцом
-        -->
-
         <h2 class="visually-hidden">Цены</h2>
         <div class="subscribe__wrapper">
-          <!--
-  !!Создать таблицу из 3 столбцов, убрать названия Розовый фильтр и т.д.
-  !!и навесить псевдоэлементами на строки галочки и кресты
--->
-
           <!--
           <table class="subscribe__tariff tariff-list">
             <tr class="tariff-list__item tariff-name-list">
@@ -349,10 +364,6 @@
             ></button>
             <button class="slide-handler__button slide-button"></button>
           </div>
-          <!--
-             !! Таблица сделана, обернуть ее в слайдер, повешать ховером
-             !! ленту на выделенный пункт
-          -->
         </div>
       </section>
 
