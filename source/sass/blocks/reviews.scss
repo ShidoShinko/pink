@@ -27,6 +27,7 @@
 
   @media (min-width: $tablet) {
     flex-direction: column-reverse;
+
     &__author-info {
       display: block;
     }
