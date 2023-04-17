@@ -1,8 +1,11 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   text-align: center;
+
+  &__slogan {
+    margin-top: 50px;
+  }
 
   &__description {
     margin: 0;
