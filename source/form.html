@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <title>Pink Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -59,269 +60,225 @@
         >
           <fieldset class="data-contest">
             <legend class="visually-hidden">ФИО</legend>
-            <div class="form__row">
-              <div class="form__wrapper">
-                <label for="second-name">Фамилия:</label>
-                <input
-                  class="data-contest__input data-contest__second-name"
-                  type="text"
-                  name="second-name"
-                  id="second-name"
-                  placeholder="Укажите фамилию *"
-                />
-              </div>
-            </div>
-            <div class="form__row">
-              <div class="form__wrapper">
-                <label for="name">Имя:</label>
-                <input
-                  class="data__input data__name"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Введите ваше имя *"
-                />
-              </div>
-            </div>
-            <div class="form__row">
-              <div class="form__wrapper">
-                <label for="middlename">Отчество:</label>
-                <input
-                  class="data__input data__middlename"
-                  type="text"
-                  name="middlename"
-                  id="middlename"
-                  placeholder="Ну и отчество тоже"
-                />
-              </div>
-            </div>
+            <label class="form__label" for="second-name">Фамилия:</label>
+            <input
+              class="form__input"
+              type="text"
+              name="second-name"
+              id="second-name"
+              placeholder="Укажите фамилию *"
+            />
+
+            <label class="form__label" for="name">Имя:</label>
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Введите ваше имя *"
+            />
+
+            <label class="form__label" for="middlename">Отчество:</label>
+            <input
+              class="form__input"
+              type="text"
+              name="middlename"
+              id="middlename"
+              placeholder="Ну и отчество тоже"
+            />
           </fieldset>
 
           <fieldset class="achievements-contest">
-            <div class="achievements-contest__wrapper">
-              <p class="achievements-contest__title">
-                Ваши безбашенные достижения в путешествии
-              </p>
-              <fieldset>
-                <legend
-                  class="achievements-contest__filter-legend visually-hidden"
+            <h2 class="form__title">
+              Ваши безбашенные достижения в путешествии
+            </h2>
+            <ul class="achievements-contest__list">
+              <li class="achievements-contest__item">
+                <input
+                  class="visually-hidden achievements-contest__input-check"
+                  type="checkbox"
+                  name="selfie"
+                  id="filter-first"
+                  checked
+                />
+                <label
+                  class="achievements-contest__label-check"
+                  for="filter-first"
                 >
-                  Достижения:
-                </legend>
-                <ul class="">
-                  <li class="">
-                    <input
-                      class="visually-hidden filter-input-checkbox"
-                      type="checkbox"
-                      name="selfie"
-                      id="filter-first"
-                      checked
-                    />
-                    <label
-                      class="filter__achievements-contest filter__achievements-contest--checkbox"
-                      for="filter-first"
-                    >
-                      Сделал селфи с акулой
-                    </label>
-                  </li>
-                  <li>
-                    <input
-                      class="visually-hidden filter-input-checkbox"
-                      type="checkbox"
-                      name="selfie"
-                      id="filter-second"
-                      checked
-                    />
-                    <label
-                      class="filter__achievements-contest filter__achievements-contest--checkbox"
-                      for="filter-second"
-                    >
-                      Обгорел на пляже
-                    </label>
-                  </li>
-                  <li>
-                    <input
-                      class="visually-hidden filter-input-checkbox"
-                      type="checkbox"
-                      name="selfie"
-                      id="filter-third"
-                      checked
-                    />
-                    <label
-                      class="filter__achievements-contest filter__achievements-contest--checkbox"
-                      for="filter-third"
-                    >
-                      Видел Чака Норриса
-                    </label>
-                  </li>
-                  <li>
-                    <input
-                      class="visually-hidden filter-input-checkbox"
-                      type="checkbox"
-                      name="selfie"
-                      id="filter-fourth"
-                      checked
-                    />
-                    <label
-                      class="filter__achievements-contest filter__achievements-contest--checkbox"
-                      for="filter-fourth"
-                    >
-                      Накупил сувениров
-                    </label>
-                  </li>
-                  <li>
-                    <input
-                      class="visually-hidden filter-input-checkbox"
-                      type="checkbox"
-                      name="selfie"
-                      id="filter-fifth"
-                      checked
-                    />
-                    <label
-                      class="filter__achievements-contest filter__achievements-contest--checkbox"
-                      for="filter-fifth"
-                    >
-                      Удержал башню
-                    </label>
-                  </li>
-                  <li>
-                    <input
-                      class="visually-hidden filter-input-checkbox"
-                      type="checkbox"
-                      name="selfie"
-                      id="filter-sixth"
-                      checked
-                    />
-                    <label
-                      class="filter__achievements-contest filter__achievements-contest--checkbox"
-                      for="filter-sixth"
-                    >
-                      Разгромил отель
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
+                  Сделал селфи с акулой
+                </label>
+              </li>
+              <li class="achievements-contest__item">
+                <input
+                  class="visually-hidden achievements-contest__input-check"
+                  type="checkbox"
+                  name="selfie"
+                  id="filter-second"
+                  checked
+                />
+                <label
+                  class="achievements-contest__label-check"
+                  for="filter-second"
+                >
+                  Обгорел на пляже
+                </label>
+              </li>
+              <li class="achievements-contest__item">
+                <input
+                  class="visually-hidden achievements-contest__input-check"
+                  type="checkbox"
+                  name="selfie"
+                  id="filter-third"
+                />
+                <label
+                  class="achievements-contest__label-check"
+                  for="filter-third"
+                >
+                  Видел Чака Норриса
+                </label>
+              </li>
+              <li class="achievements-contest__item">
+                <input
+                  class="visually-hidden achievements-contest__input-check"
+                  type="checkbox"
+                  name="selfie"
+                  id="filter-fourth"
+                />
+                <label
+                  class="achievements-contest__label-check"
+                  for="filter-fourth"
+                >
+                  Накупил сувениров
+                </label>
+              </li>
+              <li class="achievements-contest__item">
+                <input
+                  class="visually-hidden achievements-contest__input-check"
+                  type="checkbox"
+                  name="selfie"
+                  id="filter-fifth"
+                  checked
+                />
+                <label
+                  class="achievements-contest__label-check"
+                  for="filter-fifth"
+                >
+                  Удержал башню
+                </label>
+              </li>
+              <li class="achievements-contest__item">
+                <input
+                  class="visually-hidden achievements-contest__input-check"
+                  type="checkbox"
+                  name="selfie"
+                  id="filter-sixth"
+                />
+                <label
+                  class="achievements-contest__label-check"
+                  for="filter-sixth"
+                >
+                  Разгромил отель
+                </label>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="contacts-contest">
-            <div class="contacts-contest__wrapper">
-              <div class="form__row">
-                <div class="form__wrapper">
-                  <label for="tel">Номер телефона</label>
-                  <input
-                    class="contacts-contest__input contacts-contest__number"
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    placeholder="Номер, пожалуйста"
-                  />
-                </div>
-              </div>
-              <div class="form__row">
-                <div class="form__wrapper">
-                  <label for="email">Адрес почты</label>
-                  <input
-                    class="contacts-contest__input contacts-contest__email"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Введите почту *"
-                  />
-                </div>
-              </div>
-            </div>
+            <label class="form__label" for="tel">Номер телефона</label>
+            <input
+              class="form__input"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Номер, пожалуйста"
+            />
+            <label class="form__label" for="email">Адрес почты</label>
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Введите почту *"
+            />
           </fieldset>
 
           <fieldset class="application-contest">
-            <div class="application-contest__wrapper">
-              <p class="application-contest__title">
-                С каким приложением путешествовали?
-              </p>
-              <fieldset>
-                <legend
-                  class="application-contest__filter-legend visualy-hidden"
+            <h2 class="form__title">С каким приложением путешествовали?</h2>
+            <legend class="application-contest__legend visually-hidden">
+              Приложения:
+            </legend>
+            <ul class="application-contest__list">
+              <li class="application-contest__item">
+                <input
+                  class="visually-hidden application-contest__input-radio"
+                  type="radio"
+                  name="application-contest"
+                  value="application-contest__ios"
+                  id="filter-ios"
+                  checked
+                />
+                <label
+                  class="application-contest__label-radio"
+                  for="filter-ios"
                 >
-                  Приложения:
-                </legend>
-                <ul class="">
-                  <li class="">
-                    <input
-                      class="visually-hidden application-contest__filter-input-radio"
-                      type="radio"
-                      name="application-contest"
-                      value="application-contest__ios"
-                      id="filter-ios"
-                    />
-                    <label
-                      class="filter__application-contest filter__application-contest--radio"
-                      for="filter-ios"
-                    >
-                      Pink для iOS
-                    </label>
-                  </li>
-                  <li>
-                    <input
-                      class="visually-hidden application-contest__filter-input-radio"
-                      type="radio"
-                      name="application-contest"
-                      value="application-contest__android"
-                      id="filter-android"
-                    />
-                    <label
-                      class="filter__application-contest filter__application-contest--radio"
-                      for="filter-android"
-                    >
-                      Pink для Android
-                    </label>
-                  </li>
-                  <li>
-                    <input
-                      class="visually-hidden application-contest__filter-input-radio"
-                      type="radio"
-                      name="application-contest"
-                      value="application-contest__windows"
-                      id="filter-windows"
-                    />
-                    <label
-                      class="filter__application-contest filter__application-contest--radio"
-                      for="filter-windows"
-                    >
-                      Windows Phone
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
+                  Pink для iOS
+                </label>
+              </li>
+              <li class="application-contest__item">
+                <input
+                  class="visually-hidden application-contest__input-radio"
+                  type="radio"
+                  name="application-contest"
+                  value="application-contest__android"
+                  id="filter-android"
+                />
+                <label
+                  class="application-contest__label-radio"
+                  for="filter-android"
+                >
+                  Pink для Android
+                </label>
+              </li>
+              <li class="application-contest__item">
+                <input
+                  class="visually-hidden application-contest__input-radio"
+                  type="radio"
+                  name="application-contest"
+                  value="application-contest__windows"
+                  id="filter-windows"
+                />
+                <label
+                  class="application-contest__label-radio"
+                  for="filter-windows"
+                >
+                  Windows Phone
+                </label>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="feedback-contest">
-            <div class="feedback-contest__wrapper">
-              <div class="form__row">
-                <div class="form__wrapper">
-                  <label for="impression">Опишите свои эмоции</label>
-                  <input
-                    class="feedback-contest__input feedback-contest__impression"
-                    type="text"
-                    name="impression"
-                    id="impression"
-                    placeholder="Можно прям в красках, не стесняясь в выражениях"
-                  />
-                </div>
-              </div>
-            </div>
+            <label class="form__label" for="impression">
+              Опишите свои эмоции
+            </label>
+            <input
+              class="form__input"
+              type="text"
+              name="impression"
+              id="impression"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"
+            />
           </fieldset>
 
-          <button class="form-contest__send" type="submit">
-            Отправить форму
-          </button>
+          <div class="submit">
+            <button class="submit__button green-button" type="submit">
+              Отправить форму
+            </button>
 
-          <p class="main-footer__legend main-footer__legend--center">
-            <small> * - обязательные поля </small>
-          </p>
-          <small class="main-footer__legend main-footer__legend--right">
-            * - обязательные поля
-          </small>
+            <small class="submit__legend">
+              <span class="submit__color-text">*</span> - обязательные поля
+            </small>
+          </div>
         </form>
       </section>
     </main>

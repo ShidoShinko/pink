@@ -137,3 +137,18 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.secondary-text-color {
+  color: $secondary;
+}
+
+.green-button {
+  text-transform: uppercase;
+  font-style: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $background-first;
+  background: $button-second;
+  border: 2px solid $button-second;
+  border-radius: 1px;
+}

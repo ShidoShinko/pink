@@ -1,0 +1,159 @@
+.form {
+  & fieldset {
+    border: none;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary;
+  }
+
+  &__label {
+    margin-left: 10px;
+    line-height: 18px;
+    color: $secondary;
+  }
+
+  &__input {
+    min-width: 276px;
+    height: 59px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: 2px solid $border-color;
+    border-radius: 1px;
+  }
+
+  &__input:hover {
+    border: 2px solid $primary;
+  }
+
+  &__input:active {
+    border: 2px solid $secondary;
+  }
+}
+
+.data-contest {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievements-contest {
+  margin: 0;
+  background-color: $background-second;
+
+  &__label-check {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    margin-top: 14px;
+    padding-left: 35px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+  }
+
+  &__label-check::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 2px solid $border-color;
+    background-color: $background-first;
+  }
+
+  &__label-check:hover::before {
+    border: 2px solid $primary;
+  }
+
+  &__input-check:checked + &__label-check::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../../img/check-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 0, 0;
+  }
+
+  // &__input-check:checked + &__label-check:hover::after {
+  //   color: $secondary;
+  // }
+}
+
+.contacts-contest {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-contest {
+  background-color: $background-second;
+
+  &__label-radio {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    margin-top: 14px;
+    padding-left: 35px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+  }
+
+  &__label-radio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 37px;
+    box-sizing: border-box;
+    border: 2px solid $border-color;
+    border-radius: 50%;
+    background-color: $background-first;
+  }
+
+  &__label-radio:hover::before {
+    border: 2px solid $primary;
+  }
+
+  &__input-radio:checked + &__label-radio::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../img/radio-point.svg");
+    background-repeat: no-repeat;
+    background-position: 0, 0;
+  }
+
+  // &__input-radio:checked + &__label-radio:hover::after {
+  //   color: $secondary;
+  // }
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__button {
+    width: 276px;
+    height: 59px;
+  }
+
+  &__legend {
+    line-height: 30px;
+  }
+
+  &__color-text {
+    color: $secondary;
+  }
+}
