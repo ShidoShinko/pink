@@ -11,6 +11,7 @@
 
   &__label {
     margin-left: 10px;
+    margin-bottom: 17px;
     line-height: 18px;
     color: $secondary;
   }
@@ -19,9 +20,14 @@
     min-width: 276px;
     height: 59px;
     padding-left: 10px;
+    margin-bottom: 29px;
     font-size: 18px;
     border: 2px solid $border-color;
     border-radius: 1px;
+  }
+
+  &__input:last-child {
+    margin-bottom: 44px;
   }
 
   &__input:hover {
@@ -31,6 +37,13 @@
   &__input:active {
     border: 2px solid $secondary;
   }
+}
+
+.promo {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 54px;
+  margin-bottom: 54px;
 }
 
 .data-contest {
@@ -137,6 +150,18 @@
   // &__input-radio:checked + &__label-radio:hover::after {
   //   color: $secondary;
   // }
+}
+
+.feedback-contest {
+  &__text {
+    text-align: center;
+    margin-bottom: 52px;
+    width: 276px;
+    height: 197px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .submit {

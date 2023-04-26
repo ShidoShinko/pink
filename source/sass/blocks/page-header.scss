@@ -1,52 +1,107 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  margin: 0;
-  min-width: 318px;
-  background-color: $primary;
-  color: $background-first;
-  background-image: url("../../img/back-mobile.png");
-  background-repeat: no-repeat;
-  background-size: auto, auto, cover;
-  background-position-x: center;
-  z-index: 1;
+  min-width: 320px;
+  overflow: hidden;
 
-  // &::after {
-  //   position: absolute;
-  //   bottom: 0;
-  //   height: 286px;
-  //   width: 100%;
-  //   background-image: url(../../img/phone.png);
-  //   content: "";
-  //   background-repeat: no-repeat;
-  // }
+  &__background img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    width: 290px;
+    margin: 0 auto 24px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  &__social {
+    display: none;
+    z-index: 1;
+  }
+
+  &__social-mobile {
+    display: block;
+  }
 
   @media (min-width: $tablet) {
-    &::after {
-      position: absolute;
-      bottom: 0;
-      height: 286px;
-      width: 100%;
-      background-image: url("../../img/phone-tablet.png");
-      content: "";
-      background-repeat: no-repeat;
+    &__social {
+      display: block;
     }
-    background-image: url("../../img/back-tablet.png");
+
+    &__social-mobile {
+      display: none;
+    }
+  }
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  picture {
+    margin-top: 1px;
   }
 
-  @media (min-width: $desktop) {
-    background-image: url("../../img/back-desktop.png");
+  .burger__line {
+    width: 100%;
+    height: 4px;
+    background-color: $background-first;
   }
 
-  &__logo {
-    img {
-      @media (min-width: $tablet) {
-        width: 145px;
-        height: 40px;
-      }
+  &__list {
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 32px;
+    font-weight: bold;
+  }
 
-      @media (min-width: $desktop) {
-        width: 147px;
-      }
+  &__item {
+    display: block;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    height: 63px;
+    width: 320px;
+
+    a {
+      color: $background-first;
     }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    align-items: center;
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 50px;
+    height: 24px;
   }
 }
